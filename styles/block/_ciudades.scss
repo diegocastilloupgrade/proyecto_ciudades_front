@@ -6,10 +6,12 @@
   h1 {
     text-align: center;
     font-family: 'Fredericka the Great', cursive;
-    font-size: 60px;
+    font-size: 4rem;
     color: $primary-color;
     
   }
+
+  
   .menu{
     background: $pink;
     color: rgb(3, 3, 3);
@@ -51,7 +53,7 @@
       line-height: 45px;
       padding: 0 14px;
       text-decoration: none;
-      color: #FFFFFF;
+      color: #000000;
       font-size: 1rem;
     }
   }
@@ -60,12 +62,12 @@
 .portada{
   
   font-family:'Fredericka the Great', cursive; 
-  font-size: 2rem;
+  font-size: 3rem;
   height: 100vh;
   text-align: center;
   padding-top: 5%;
-  color: $pink;
-  background: linear-gradient(to right, rgb(25, 25, 25), rgb(178, 171, 159));
+  color: black;
+  background: linear-gradient(to right, rgb(182, 180, 180), rgb(255, 255, 255));
   border: solid 30px $pink;
   
   
@@ -79,6 +81,7 @@ img {
 
 .ciudadess,
 .comunidades {
+  font-family: 'BhuTuka Expanded One', cursive;
   display: flex;
   flex-wrap: wrap;
   margin-inline: 3vw;
@@ -87,14 +90,14 @@ img {
   justify-content: space-between;
   .divPadre {
     border-radius: 16px;
-    border: solid black;
+    border: solid #901b8c;
     width: 20%;
     padding: 1rem;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: #D6A2AD 0px 1px 1px 0px inset,
+      #327f4f40 0px 50px 100px -20px,
+      rgba(135, 54, 131, 0.3) 0px 30px 60px -30px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-    background: #eeeeee; /* Old browsers */
+    background: #D6A2AD; /* Old browsers */
     background: -moz-linear-gradient(
       top,
       #eeeeee 0%,
@@ -103,12 +106,12 @@ img {
     background: -webkit-linear-gradient(
       top,
       #eeeeee 0%,
-      #cccccc 100%
+      #7a4d4d 100%
     ); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(
       to bottom,
-      #eeeeee 0%,
-      #cccccc 100%
+      #D6A2AD 0%,
+      #fffdfd 100%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 
@@ -133,9 +136,10 @@ img {
   font-family:'Fredericka the Great', cursive; 
   width: 100vw;
   height: 10vw;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   font-size: 3rem;
   text-align: center;
+  
   
 
 
@@ -148,9 +152,9 @@ img {
   font-family:'Fredericka the Great', cursive; 
   width: 100vw;
   height: 10vw;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   font-size: 3rem;
   text-align: center;
-  border: 2px solid $pink;
+  
 
 }

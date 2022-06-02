@@ -482,7 +482,7 @@ input[type="checkbox"], input[type="radio"] {
 .home h1 {
   text-align: center;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 60px;
+  font-size: 4rem;
   color: #4A6670;
 }
 
@@ -524,19 +524,19 @@ input[type="checkbox"], input[type="radio"] {
   line-height: 45px;
   padding: 0 14px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #000000;
   font-size: 1rem;
 }
 
 .portada {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   height: 100vh;
   text-align: center;
   padding-top: 5%;
-  color: #D6A2AD;
-  background: -webkit-gradient(linear, left top, right top, from(#191919), to(#b2ab9f));
-  background: linear-gradient(to right, #191919, #b2ab9f);
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#b6b4b4), to(white));
+  background: linear-gradient(to right, #b6b4b4, white);
   border: solid 30px #D6A2AD;
 }
 
@@ -547,6 +547,7 @@ img {
 
 .ciudadess,
 .comunidades {
+  font-family: 'BhuTuka Expanded One', cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,18 +566,18 @@ img {
 .ciudadess .divPadre,
 .comunidades .divPadre {
   border-radius: 16px;
-  border: solid black;
+  border: solid #901b8c;
   width: 20%;
   padding: 1rem;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  -webkit-box-shadow: #D6A2AD 0px 1px 1px 0px inset, #327f4f40 0px 50px 100px -20px, rgba(135, 54, 131, 0.3) 0px 30px 60px -30px;
+          box-shadow: #D6A2AD 0px 1px 1px 0px inset, #327f4f40 0px 50px 100px -20px, rgba(135, 54, 131, 0.3) 0px 30px 60px -30px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
-  background: #eeeeee;
+  background: #D6A2AD;
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#cccccc));
-  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#D6A2AD), to(#fffdfd));
+  background: linear-gradient(to bottom, #D6A2AD 0%, #fffdfd 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
   /* IE6-9 */
@@ -603,7 +604,7 @@ img {
   font-family: 'Fredericka the Great', cursive;
   width: 100vw;
   height: 10vw;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   font-size: 3rem;
   text-align: center;
 }
@@ -612,9 +613,8 @@ img {
   font-family: 'Fredericka the Great', cursive;
   width: 100vw;
   height: 10vw;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   font-size: 3rem;
   text-align: center;
-  border: 2px solid #D6A2AD;
 }
 /*# sourceMappingURL=main.css.map */
