@@ -37,12 +37,9 @@ const allComunidades = async () => {
     ccaaDiv$$.appendChild(img$$) 
     ccaaDiv$$.appendChild(name$$)
     ccaaDiv$$.appendChild(poblacion$$)
-    ccaaDiv$$.appendChild(capital$$)
-   
+    ccaaDiv$$.appendChild(capital$$) 
     }
-
 };
-
 
 allComunidades();
 

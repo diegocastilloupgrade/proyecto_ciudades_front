@@ -1,36 +1,30 @@
-const BBDD = 'http://localhost:8000/ccaa';
+const apiUrl = 'http://localhost:8000/ccaa';
 
 const getComunidadesPorId = async () => {
-  //Nos traemos todos los datos
-  let comunidadData = await fetch(BBDD);
-  let comunidadDataJSON = await comunidadData.json();
-  let datosComunidades = comunidadDataJSON.comunidades;
+  const comunidadData = await fetch(apiUrl);
+  const comunidadDataJSON = await comunidadData.json();
+  const datosComunidades = comunidadDataJSON.comunidades;
 
-  const myComunidadData$$ = document.querySelector('.divPadre');
-  const miInput$$ = document.querySelector('.miInput');
+  // const miInput$$ = document.querySelector('.miInput');
 
-  if (miInput$$.value) {
-    for (let i = 0; i < datosComunidades.length; i++) {
-      if (
-        datosComunidades.name
-          .toLowerCase()
-          .trim()
-          .includes(miInput$$.value.toLowerCase().trim())
-      ) {
-        const ccaaContainer$$ = document.createElement('div');
-        const ccaaName$$ = document.createElement('h1');
-        const ccaaPopulation$$ = document.createElement('p');
-        const ccaaCapital$$ = document.createElement('p');
-        ccaaName$$.innerText = datosComunidades[i].name;
-        ccaaPopulation$$.innerText = datosComunidades[i].poblacion;
-        ccaaCapital$$.innerText = datosComunidades[i].capital;
-  
-        myComunidadData$$.appendChild(ccaaContainer$$);
-        ccaaContainer$$.appendChild(ccaaName$$);
-        ccaaContainer$$.appendChild(ccaaPopulation$$);
-        ccaaContainer$$.appendChild(ccaaCapital$$);
-      }
-    }
+  for (let i = 0; i < datosComunidades.length; i++) {
+    const myComunidadData$$ = document.querySelector('.comunidades');
+    const ccaaContainer$$ = document.createElement('div');
+    ccaaContainer$$.className = 'divPadre';
+    const ccaaName$$ = document.createElement('h1');
+    const ccaaPopulation$$ = document.createElement('p');
+    const ccaaCapital$$ = document.createElement('p');
+    const ccaaBandera$$ = document.createElement('img');
+    ccaaBandera$$.setAttribute('src', datosComunidades[i].bandera);
+    ccaaName$$.innerText = datosComunidades[i].name;
+    ccaaPopulation$$.innerText = datosComunidades[i].poblacion;
+    ccaaCapital$$.innerText = datosComunidades[i].capital;
+    myComunidadData$$.appendChild(ccaaContainer$$);
+
+    ccaaContainer$$.appendChild(ccaaBandera$$);
+    ccaaContainer$$.appendChild(ccaaName$$);
+    ccaaContainer$$.appendChild(ccaaPopulation$$);
+    ccaaContainer$$.appendChild(ccaaCapital$$);
   }
 };
 
