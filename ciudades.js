@@ -12,7 +12,7 @@ const ciudadesAll= async ()=>{
 
 const paintCiudades= (array) => {
     const ciudadesHTML=array.cities.map((ciudad)=>`
-    <div class="ciudadBox">
+    <div class="divPadre">
     <h2>${ciudad.name}</h2>
     <img
     src=${ciudad.escudo}

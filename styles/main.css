@@ -483,19 +483,18 @@ input[type="checkbox"], input[type="radio"] {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  margin-inline: 3vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-inline: 3vw;
 }
 
-.ciudadess .ciudadBox {
-  width: 2%;
+.ciudadess .divPadre {
+  border: solid black;
+  width: 20%;
 }
 
-.ciudadess .ciudadBox img {
-  height: 10px;
+.ciudadess .divPadre img {
+  height: 80px;
 }
 /*# sourceMappingURL=main.css.map */
