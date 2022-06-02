@@ -1,11 +1,13 @@
 @charset 'utf-8';
 
+
+
 //base
 @import "./base/typo";
 @import "./base/reset";
 @import "./base/normalize";
 //utilities
-@import "./utilities/colors";
+@import "./utilities/variables";
 @import "./utilities/responsive";
 
 //block - layouts
@@ -13,4 +15,5 @@
 
 
 @import "./block/ciudades";
+
 
