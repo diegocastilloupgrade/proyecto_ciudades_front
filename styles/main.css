@@ -441,6 +441,42 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0;
 }
 
+.tablet-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1)[4];
+      grid-template-columns: repeat(4, 1);
+  -ms-grid-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-areas: "nav nav nav nav" "main main main main" "about about about sidebar" "contact contact contact sidebar" "footer footer footer footer";
+  gap: 0.5rem;
+}
+
+.desktop-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1)[4];
+      grid-template-columns: repeat(4, 1);
+  -ms-grid-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-areas: "nav nav nav nav" "main main main main" "about about about sidebar" "contact contact contact sidebar" "footer footer footer footer";
+  gap: 0.5rem;
+}
+
+.large-grid {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: (1)[4];
+      grid-template-columns: repeat(4, 1);
+  -ms-grid-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+      grid-template-areas: "nav nav nav nav" "main main main main" "about about about sidebar" "contact contact contact sidebar" "footer footer footer footer";
+  gap: 0.5rem;
+}
+
 .ciudadess {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,11 +491,11 @@ input[type="checkbox"], input[type="radio"] {
   margin-inline: 3vw;
 }
 
-.ciudadbox {
+.ciudadess .ciudadBox {
   width: 2%;
 }
 
-.ciudadbox img {
+.ciudadess .ciudadBox img {
   height: 10px;
 }
 /*# sourceMappingURL=main.css.map */
