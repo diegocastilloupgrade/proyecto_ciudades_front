@@ -1,6 +1,8 @@
 /* Load google's Roboto font*/
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,900);
 /* Reboot */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Fredericka+the+Great&display=swap");
 html,
 body {
   margin: 0 !important;
@@ -479,14 +481,17 @@ input[type="checkbox"], input[type="radio"] {
 
 .home h1 {
   text-align: center;
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 60px;
+  color: #4A6670;
 }
 
 .home .menu {
-  background: #0099CC;
-  color: #FFF;
+  background: #D6A2AD;
+  color: #030303;
   height: 45px;
   padding-left: 18px;
-  border-radius: 10px;
+  font-family: 'BhuTuka Expanded One';
 }
 
 .home .menu ul, .home .menu li {
@@ -506,7 +511,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 .home .menu li a:hover {
-  color: #0099CC;
+  color: #4A6670;
   background: #F2F2F2;
 }
 
@@ -520,7 +525,24 @@ input[type="checkbox"], input[type="radio"] {
   padding: 0 14px;
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.portada {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2rem;
+  height: 100vh;
+  text-align: center;
+  padding-top: 5%;
+  color: #D6A2AD;
+  background: -webkit-gradient(linear, left top, right top, from(#191919), to(#b2ab9f));
+  background: linear-gradient(to right, #191919, #b2ab9f);
+  border: solid 30px #D6A2AD;
+}
+
+img {
+  height: 15rem;
+  padding-bottom: 5%;
 }
 
 .ciudadess,

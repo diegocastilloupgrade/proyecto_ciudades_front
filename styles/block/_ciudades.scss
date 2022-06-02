@@ -1,18 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Fredericka+the+Great&display=swap');
+
 .home {
   h1 {
     text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 60px;
+    color: $primary-color;
+    
   }
   .menu{
-    background: #0099CC;
-    color: #FFF;
+    background: $pink;
+    color: rgb(3, 3, 3);
     height: 45px;
     padding-left: 18px;
-    border-radius: 10px;
+    font-family: 'BhuTuka Expanded One';
+    
+    
+
+
+ 
     
     ul, li {
       margin: 0 auto;
       padding: 0;
       list-style: none
+     
+
+  
     }
     ul{
       width: 100%;
@@ -21,8 +37,9 @@
       float: left;
       display: inline;
       position: relative;
+    
       a:hover{
-        color: #0099CC;
+        color: $primary-color;
         background: #F2F2F2;
       }
       &:hover{
@@ -35,9 +52,29 @@
       padding: 0 14px;
       text-decoration: none;
       color: #FFFFFF;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
+}
+
+.portada{
+  
+  font-family:'Fredericka the Great', cursive; 
+  font-size: 2rem;
+  height: 100vh;
+  text-align: center;
+  padding-top: 5%;
+  color: $pink;
+  background: linear-gradient(to right, rgb(25, 25, 25), rgb(178, 171, 159));
+  border: solid 30px $pink;
+  
+  
+  
+}
+
+img {
+  height: 15rem;
+  padding-bottom: 5%;
 }
 
 .ciudadess,
