@@ -6,7 +6,7 @@ const getComunidadesPorId = async () => {
   let comunidadDataJSON = await comunidadData.json();
   let datosComunidades = comunidadDataJSON.comunidades;
 
-  const myComunidadData$$ = document.querySelector('.comunidades');
+  const myComunidadData$$ = document.querySelector('.divPadre');
   const miInput$$ = document.querySelector('.miInput');
 
   if (miInput$$.value) {
