@@ -22,7 +22,7 @@ const paintCiudades= (array) => {
     <h3>${ciudad.comunidad}</h3>
 
     <p>${ciudad.poblacion}</p>
-    <p>${ciudad.extension}</p>
+    <p>${ciudad.extension}</p></div>
     `
 
     ).join("");
