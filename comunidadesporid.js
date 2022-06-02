@@ -1,4 +1,4 @@
-const BBDD = 'http://localhost:5000/ccaa';
+const BBDD = 'http://localhost:8000/ccaa';
 
 const getComunidadesPorId = async () => {
   //Nos traemos todos los datos

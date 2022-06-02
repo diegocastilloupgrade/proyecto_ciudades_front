@@ -598,4 +598,23 @@ img {
 .comunidades .divPadre p span {
   font-weight: bold;
 }
+
+.ciudadesbonitas {
+  font-family: 'Fredericka the Great', cursive;
+  width: 100vw;
+  height: 10vw;
+  margin-bottom: 5%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.comunidadesbonitas {
+  font-family: 'Fredericka the Great', cursive;
+  width: 100vw;
+  height: 10vw;
+  margin-bottom: 5%;
+  font-size: 3rem;
+  text-align: center;
+  border: 2px solid #D6A2AD;
+}
 /*# sourceMappingURL=main.css.map */
