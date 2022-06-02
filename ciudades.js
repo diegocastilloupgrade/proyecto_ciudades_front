@@ -1,5 +1,5 @@
 const ciudades$$= document.querySelector(".ciudadess");
-const ciudadesApis="http://localhost:8000/ciudades"
+const ciudadesApis="http://localhost:5000/ciudades"
 
 const ciudadesAll= async ()=>{
     const ciudadesApi= await fetch(ciudadesApis);
@@ -13,16 +13,16 @@ const ciudadesAll= async ()=>{
 const paintCiudades= (array) => {
     const ciudadesHTML=array.cities.map((ciudad)=>`
     <div class="divPadre">
-    <h2>${ciudad.name}</h2>
     <img
     src=${ciudad.escudo}
     alt=${ciudad.name}
     >
-    <h3>${ciudad.capital}</h3>
-    <h3>${ciudad.comunidad}</h3>
+    <h1>${ciudad.name}</h1>
+    <p><span>Capital</span>: ${ciudad.capital}</p>
+    <p><span>Comunidad</span>: ${ciudad.comunidad}</p>
 
-    <p>${ciudad.poblacion}</p>
-    <p>${ciudad.extension}</p></div>
+    <p><span>Población</span>: ${ciudad.poblacion}</p>
+    <p><span>Extensión</span>: ${ciudad.extension}</p></div>
     `
 
     ).join("");
