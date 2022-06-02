@@ -3,15 +3,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-inline: 3vw;
+    width: 10px;
+    //margin-inline: 3vw;
 
+    .ciudadBox {
+        width: 2%;
+         img{
+            height: 10px;
+        }
+      }
     
+
   }
   
-  .ciudadbox {
-    width: 2%;
-     img{
-        height: 10px;
-    }
-  }
   
