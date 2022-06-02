@@ -1,5 +1,5 @@
 
-const comunidadesApis = "http://localhost:8000/ccaa";
+const comunidadesApis = "http://localhost:5000/ccaa";
  
 
 const comuni = [];
@@ -21,26 +21,23 @@ const allComunidades = async () => {
 
    
     const ccaaDiv$$ = document.createElement("div");
-    const name$$ = document.createElement("h2");
+    const name$$ = document.createElement("h1");
     const capital$$ = document.createElement("p");
     const poblacion$$ = document.createElement("p");
     const img$$ = document.createElement("img")
 
-    name$$.innerText = comunidadesDataJSON[i].name;
-    poblacion$$.innerText = comunidadesDataJSON[i].poblacion;
     img$$.src = comunidadesDataJSON[i].bandera;
-    capital$$.innerText = comunidadesDataJSON[i].capital;
+    name$$.innerText = comunidadesDataJSON[i].name;
+    poblacion$$.innerText = "Población " + comunidadesDataJSON[i].poblacion;
+    capital$$.innerText = "Capital " + comunidadesDataJSON[i].capital;
     ccaaDiv$$ .classList.add("divPadre");
 
     comunidades$$.appendChild(ccaaDiv$$);
 
+    ccaaDiv$$.appendChild(img$$) 
     ccaaDiv$$.appendChild(name$$)
     ccaaDiv$$.appendChild(poblacion$$)
     ccaaDiv$$.appendChild(capital$$)
-    ccaaDiv$$.appendChild(img$$) 
-    
-
-
    
     }
 

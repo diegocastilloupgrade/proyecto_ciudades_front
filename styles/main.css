@@ -477,7 +477,7 @@ input[type="checkbox"], input[type="radio"] {
   gap: 0.5rem;
 }
 
-.ciudadess {
+.ciudadess, .comunidades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,7 +493,7 @@ input[type="checkbox"], input[type="radio"] {
           justify-content: space-between;
 }
 
-.ciudadess .divPadre {
+.ciudadess .divPadre, .comunidades .divPadre {
   border-radius: 16px;
   border: solid black;
   width: 20%;
@@ -512,17 +512,17 @@ input[type="checkbox"], input[type="radio"] {
   /* IE6-9 */
 }
 
-.ciudadess .divPadre img {
+.ciudadess .divPadre img, .comunidades .divPadre img {
   height: 80px;
   margin: 1rem auto;
   display: block;
 }
 
-.ciudadess .divPadre p {
+.ciudadess .divPadre p, .comunidades .divPadre p {
   margin-bottom: 1rem;
 }
 
-.ciudadess .divPadre p span {
+.ciudadess .divPadre p span, .comunidades .divPadre p span {
   font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
